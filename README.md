@@ -15,6 +15,7 @@
 - **Leaflet.js** for map integration  
 
 ## Project Structure
+```text
 project/
 │
 ├── index.html
@@ -24,6 +25,9 @@ project/
 ├── utilities.js
 ├── ui.js
 ├── countries.js
+└── assets/
+    └── icons/
+        └── theme-icon.svg
 
 
 
@@ -38,3 +42,4 @@ Deployment
 
 The project is deployed via GitHub Pages and can be accessed at:
 https://harlov19.github.io/country-explorer/
+
