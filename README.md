@@ -15,7 +15,7 @@
 - **Leaflet.js** for map integration  
 
 ## Project Structure
-```text
+
 project/
 │
 ├── index.html
@@ -41,6 +41,7 @@ No additional setup is required.
 Deployment
 
 The project is deployed via GitHub Pages and can be accessed at:
-https://harlov19.github.io/country-explorer/
+[Country Explorer Live](https://harlov19.github.io/country-explorer/)
+
 
 
