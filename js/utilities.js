@@ -33,20 +33,31 @@ async function showLiveSearch(query) {
 // ======== MAP FUNCTIONS ========
 let map;
 function drawMap(latlng, name) {
+  if (!latlng || latlng.length < 2) {
+    countryMap.innerHTML = "Map unavailable for this country.";
+    return;
+  }
+
   const [lat, lng] = latlng;
 
   if (!map) {
     map = L.map('map').setView([lat, lng], 6);
-    L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
-      attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
       maxZoom: 19,
+      attribution: '&copy; OpenStreetMap contributors'
     }).addTo(map);
   } else {
     map.setView([lat, lng], 6);
   }
 
-  L.marker([lat, lng]).addTo(map).bindPopup(`<b>${name}</b>`).openPopup();
+  map.invalidateSize();
+
+  L.marker([lat, lng])
+    .addTo(map)
+    .bindPopup(`<b>${name}</b>`)
+    .openPopup();
 }
+
 
 // ======== TIME FUNCTIONS ========
 function getLocalTime(timeZone) {
