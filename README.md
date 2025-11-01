@@ -20,14 +20,14 @@ project/
 │
 ├── index.html
 ├── style.css
-├── main.js
-├── API.js
-├── utilities.js
-├── ui.js
-├── countries.js
-└── assets/
-    └── icons/
-        └── theme-icon.svg
+├── js
+     ├── main.js
+     ├── API.js
+     ├── utilities.js
+     ├── ui.js
+     ├── countries.js
+
+
 
 
 
@@ -42,4 +42,5 @@ Deployment
 
 The project is deployed via GitHub Pages and can be accessed at:
 https://harlov19.github.io/country-explorer/
+
 
