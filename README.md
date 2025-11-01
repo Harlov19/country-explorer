@@ -15,7 +15,7 @@
 - **Leaflet.js** for map integration  
 
 ## Project Structure
-
+```text
 project/
 │
 ├── index.html
@@ -30,7 +30,7 @@ project/
 
 
 
-
+```
 ## Setup and Usage
 1. Clone this repository:
    ```bash
@@ -42,6 +42,7 @@ Deployment
 
 The project is deployed via GitHub Pages and can be accessed at:
 [Country Explorer Live](https://harlov19.github.io/country-explorer/)
+
 
 
 
